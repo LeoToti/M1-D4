@@ -134,3 +134,20 @@ console.log(cutString('Ciao come va oroc'))
 
 
 
+/* EXERCISE 10
+Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
+*/
+
+const giveMeRandom = function(n){
+    
+    array = []
+    for (i=0;i<n;i++){
+        randdomNums = Math.floor(Math.random()*10)
+        array.push(randdomNums)
+
+
+    }
+    return array
+}
+
+console.log(giveMeRandom(5))
