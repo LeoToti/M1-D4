@@ -104,9 +104,7 @@ const upperFirst = function(str){
     console.log(splitStr)
     let strArray = []
     for (i=0 ;i < splitStr.length; i++){
-        let sec = splitStr[i].charAt(0).toUpperCase() + splitStr.slice(1)
-        
-        
+        let sec = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1)
         strArray.push(sec)
 
     }
@@ -114,7 +112,7 @@ const upperFirst = function(str){
     return strArray
 }
 
-console.log(upperFirst('Ciao'))
+console.log(upperFirst('Ciao come va'))
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
@@ -123,9 +121,9 @@ Write a function "cutString" to create a new string without the first and last c
 const cutString = function(str){
 
         var tmp = str.split(''); // convert to an array
-        console.log(tmp)
+        
         tmp.shift()
-        console.log(tmp)
+    
         tmp.pop()
         return tmp.join(''); // reconstruct the string
     
