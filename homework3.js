@@ -89,7 +89,7 @@ Write a function "reverseString" to programmatically reverse a given string (es.
 const reverseString = function(str){
     let splitStr = str.split("")
     let revStr = splitStr.reverse()
-    let joinStr = revStr.join()
+    let joinStr = revStr.join(" ")
     return joinStr
 }
 
@@ -108,8 +108,9 @@ const upperFirst = function(str){
         strArray.push(sec)
 
     }
+    
      
-    return strArray
+    return strArray.join(" ")
 }
 
 console.log(upperFirst('Ciao come va'))
